@@ -1,7 +1,6 @@
 'use client'
 
 import * as React from 'react'
-import { Share_Tech_Mono } from 'next/font/google'
 import Link from 'next/link'
 
 import { cn } from '@/lib/utils'
@@ -15,10 +14,7 @@ import {
 } from '@/components/ui/navigation-menu'
 import { Icons } from '@/components/icons'
 
-const techfont = Share_Tech_Mono({
-  subsets: ['latin'],
-  weight: ['400'],
-})
+import { sharetechmono } from '../lib/fonts'
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -98,7 +94,7 @@ const empresacomponents: {
 
 export default function Navbar() {
   return (
-    <div className={techfont.className}>
+    <div className={sharetechmono.className}>
       <nav className="relative flex h-14 w-full items-center justify-center bg-background">
         <Link href={'/'}>
           <h1 className="absolute left-0 top-4 ml-8 text-xl">Sams Rocket</h1>
