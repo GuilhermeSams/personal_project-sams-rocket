@@ -14,92 +14,21 @@ import {
 } from '@/components/ui/navigation-menu'
 import { Icons } from '@/components/icons'
 
-import { sharetechmono } from '../lib/fonts'
-
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: 'Space Orbit',
-    href: '#',
-    description:
-      'Pedro Palota, dono do canal no Youtube chamado Space Oribit, faz live de lanaçamento de foguetes.',
-  },
-  {
-    title: 'Space Today',
-    href: '#',
-    description:
-      'Segio Sacani, é geofísico, mas ama astronomia e o setor aeroespacial, ele faz live de eventos astronomicos e foguetes.',
-  },
-  {
-    title: 'Dobra Espacial',
-    href: '#',
-    description:
-      'Muitos chama de Dino, ele faz vídeo com uma qualidade absurda, os documentários dele sobre o Space Shuttle é sensacional.',
-  },
-  {
-    title: 'Café e Ciência',
-    href: '#',
-    description:
-      'Físico e Astronomo, ele já falou que eu sou masoquista por estudar Engenharia',
-  },
-  {
-    title: 'Ned Oliveira',
-    href: '#',
-    description:
-      'Uma mulher inteligente, que ama astronomia e foguetes, participa dos podcasts do Ciência sem fim',
-  },
-]
-
-const empresacomponents: {
-  title: string
-  href: string
-  description: string
-}[] = [
-  {
-    title: 'SpaceX',
-    href: '#',
-    description:
-      'A SpaceX é uma empresa privada revolucionária de exploração espacial.',
-  },
-  {
-    title: 'NASA',
-    href: '#',
-    description:
-      'A NASA é a agência espacial pioneira, desbravando fronteiras cósmicas.',
-  },
-  {
-    title: 'AEB',
-    href: '#',
-    description:
-      'AEB: Agência Espacial Brasileira, impulsionando o Brasil rumo ao espaço.',
-  },
-  {
-    title: 'Rocket Lab',
-    href: '#',
-    description:
-      'Inovação audaciosa, lançando pequenos foguetes para grandes conquistas.',
-  },
-  {
-    title: 'Ariane Space',
-    href: '#',
-    description:
-      'Líder europeia, impulsionando missões espaciais com excelência tecnológica',
-  },
-  {
-    title: 'United Launch Alliance (ULA)',
-    href: '#',
-    description:
-      'Parceria Boeing-Lockheed Martin, líder em lançamentos confiáveis e inovadores',
-  },
-]
+import { sharetechmono } from '../../lib/fonts'
+import navbarDataCompany from './navbarDataCompany'
+import navbarDataTransmition from './navbarDataTransmition'
 
 export default function Navbar() {
+  const dataCompany = navbarDataCompany()
+  const dataTransmition = navbarDataTransmition()
+
   return (
     <div className={sharetechmono.className}>
       <nav className="relative flex h-14 w-full items-center justify-center bg-background">
         <Link href={'/'}>
           <h1 className="absolute left-0 top-4 ml-8 text-xl">Sams Rocket</h1>
         </Link>
-        <NavigationMenu className="">
+        <NavigationMenu>
           <NavigationMenuList className="flex gap-8">
             <NavigationMenuItem>
               <NavigationMenuTrigger>Foguetes</NavigationMenuTrigger>
@@ -111,7 +40,7 @@ export default function Navbar() {
                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                         href="/"
                       >
-                        <Icons.logo className="h-6 w-6" />
+                        <Icons.logo />
                         <div className="mb-2 mt-4 text-lg font-medium">
                           Starship
                         </div>
@@ -141,7 +70,7 @@ export default function Navbar() {
               <NavigationMenuTrigger>Transmissões</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {components.map((component) => (
+                  {dataTransmition.map((component) => (
                     <ListItem
                       key={component.title}
                       title={component.title}
@@ -157,7 +86,7 @@ export default function Navbar() {
               <NavigationMenuTrigger>Empresas</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {empresacomponents.map((component) => (
+                  {dataCompany.map((component) => (
                     <ListItem
                       key={component.title}
                       title={component.title}

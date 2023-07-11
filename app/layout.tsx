@@ -3,9 +3,10 @@ import React from 'react'
 import { Metadata } from 'next'
 
 import { siteConfig } from '@/config/site'
+import Footer from '@/components/footer'
 // import { fontSans } from '@/lib/fonts'
 // import { cn } from '@/lib/utils'
-import Navbar from '@/components/navbar'
+import Navbar from '@/components/navbar/navbar'
 import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="flex-1">{children}</div>
             </div>
           </ThemeProvider>
+          <Footer />
         </body>
       </html>
     </>

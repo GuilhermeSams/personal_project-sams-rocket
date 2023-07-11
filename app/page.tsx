@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import img_bg from 'public/rocketbg.png'
 
-import { Icons } from '@/components/icons'
-
 import { sharetechmono } from '../lib/fonts'
 
 export default function Home() {
@@ -30,8 +28,8 @@ export default function Home() {
           </h1>
         </div>
       </section>
-      <section className="h-screen max-w-full ">
-        <div className="mx-auto w-3/4 text-center text-xl	 text-black	">
+      <section className="h-full max-w-full ">
+        <div className="mx-auto w-3/4 pb-12	text-center	text-xl text-black">
           <p className="mb-6 mt-12">
             Quando pensamos em foguetes e missões aeroespaciais temos uma falsa
             premissa de está sendo injetada uma quantidade exorbitante de
@@ -49,8 +47,57 @@ export default function Home() {
             investimento do exercito dos Estados Unidos.
           </p>
         </div>
-        <div>
-          <Icons.verticalBar className="p-48 text-black" />
+        <div className="flex pt-16 text-justify text-black">
+          <div className="flex flex-col gap-12">
+            <div className="m-12">
+              <h2 className="mb-4 text-xl">Explorando novas fronteiras</h2>
+              <p className="text-gray-800">
+                Investir no setor aeroespacial nos permite expandir nossos
+                horizontes e explorar o desconhecido. Ao fazê-lo, podemos
+                avançar em tecnologias e descobertas que podem ter aplicação
+                direta para resolver problemas terrestres.
+              </p>
+            </div>
+
+            <div>
+              <div className="m-12">
+                <h2 className="mb-4 text-xl">Explorando novas fronteiras</h2>
+                <p className="text-gray-800">
+                  Investir no setor aeroespacial nos permite expandir nossos
+                  horizontes e explorar o desconhecido. Ao fazê-lo, podemos
+                  avançar em tecnologias e descobertas que podem ter aplicação
+                  direta para resolver problemas terrestres.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 h-[700px] w-2 rounded bg-black"></div>
+          <div className="flex items-center">
+            <div className="flex flex-col gap-12">
+              <div className="m-12">
+                <h2 className="mb-4 text-xl">
+                  Monitoramento e prevenção de desastres naturais
+                </h2>
+                <p className="text-gray-800">
+                  Investir no setor aeroespacial nos permite expandir nossos
+                  horizontes e explorar o desconhecido. Ao fazê-lo, podemos
+                  avançar em tecnologias e descobertas que podem ter aplicação
+                  direta para resolver problemas terrestres.
+                </p>
+              </div>
+              <div className="m-12">
+                <h2 className="mb-4 text-xl">
+                  Monitoramento e prevenção de desastres naturais
+                </h2>
+                <p className="text-gray-800">
+                  Investir no setor aeroespacial nos permite expandir nossos
+                  horizontes e explorar o desconhecido. Ao fazê-lo, podemos
+                  avançar em tecnologias e descobertas que podem ter aplicação
+                  direta para resolver problemas terrestres.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
