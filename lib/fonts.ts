@@ -1,11 +1,7 @@
-import { JetBrains_Mono as FontMono, Inter as FontSans } from 'next/font/google'
+import { Share_Tech_Mono } from 'next/font/google'
 
-export const fontSans = FontSans({
+export const sharetechmono = Share_Tech_Mono({
   subsets: ['latin'],
-  variable: '--font-sans',
-})
-
-export const fontMono = FontMono({
-  subsets: ['latin'],
-  variable: '--font-mono',
+  display: 'swap',
+  weight: '400',
 })
