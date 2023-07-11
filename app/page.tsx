@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import img_sat from 'public/Satellite-Communications-Systems-Sustainment.jpg'
+import img_gps_city from 'public/gps_city.png'
 import img_bg from 'public/rocketbg.png'
 
 import { sharetechmono } from '../lib/fonts'
@@ -97,6 +99,63 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="pt-8">
+        <div className="relative shadow-xl">
+          <div className="absolute z-[-1] h-full w-screen max-w-full bg-fixed shadow-2xl">
+            <Image
+              alt="img_sat"
+              src={img_sat}
+              placeholder="blur"
+              quality={100}
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+                filter: 'brightness(0.4)',
+              }}
+            />
+          </div>
+          <div className="m-auto flex w-3/5 flex-col items-center justify-center py-52 text-center">
+            <h1 className="w-[50rem] text-center text-4xl leading-relaxed">
+              Comunicações via satélite
+            </h1>
+            <p>
+              Muitas das comunicações que realizamos, como chamadas telefônicas,
+              transmissão de dados e acesso à Internet, dependem de satélites de
+              comunicação em órbita ao redor da Terra. Esses satélites fornecem
+              uma infraestrutura crucial para a comunicação global.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center bg-gray-500">
+          <div className="m-12 text-white">
+            <h1 className="mb-4 text-xl">
+              Navegando com Precisão: A Revolução do GPS
+            </h1>
+            <p>
+              O GPS (Global Positioning System) também está no espaço! Desde o
+              lançamento do primeiro satélite GPS em 1978, a constelação tem
+              crescido, fornecendo cobertura global. Astronautas o utilizam em
+              caminhadas espaciais e sondas espaciais contam com ele para
+              rastreamento e navegação. Com avanços tecnológicos, o GPS evoluiu,
+              melhorando a precisão. Hoje, é essencial em áreas como navegação
+              veicular, militares e científicas. O GPS conecta o mundo com
+              confiança e precisão.
+            </p>
+          </div>
+          <div className="mx-8">
+            <Image
+              alt="img_gps_city"
+              sizes="(max-width: 768px) 100vw"
+              height={4000}
+              src={img_gps_city}
+              placeholder="blur"
+              quality={100}
+              style={{}}
+            />
           </div>
         </div>
       </section>
