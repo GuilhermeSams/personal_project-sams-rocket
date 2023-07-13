@@ -8,8 +8,8 @@ import { sharetechmono } from '../lib/fonts'
 export default function Home() {
   return (
     <main className={sharetechmono.className}>
-      <section className="relative shadow-xl">
-        <div className="absolute z-[-1] h-screen w-screen max-w-full shadow-2xl">
+      <section className="relative">
+        <div className="absolute z-[-1] h-screen w-screen max-w-full">
           <Image
             alt="img_rocket"
             src={img_bg}
@@ -30,9 +30,9 @@ export default function Home() {
           </h1>
         </div>
       </section>
-      <section className="h-full max-w-full ">
+      <section className="h-full max-w-full">
         <div className="mx-auto w-3/4 pb-12	text-center	text-xl text-black">
-          <p className="mb-6 mt-12">
+          <p className="mb-6 pt-12">
             Quando pensamos em foguetes e missões aeroespaciais temos uma falsa
             premissa de está sendo injetada uma quantidade exorbitante de
             dinheiro neste setor. E surge a pergunta: Porque gastar tanto
@@ -103,8 +103,8 @@ export default function Home() {
         </div>
       </section>
       <section className="pt-8">
-        <div className="relative shadow-xl">
-          <div className="absolute z-[-1] h-full w-screen max-w-full bg-fixed shadow-2xl">
+        <div className="relative shadow-2xl">
+          <div className="absolute z-[-1] h-full w-screen max-w-full">
             <Image
               alt="img_sat"
               src={img_sat}
@@ -118,11 +118,11 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="m-auto flex w-3/5 flex-col items-center justify-center py-52 text-center">
-            <h1 className="w-[50rem] text-center text-4xl leading-relaxed">
+          <div className="m-auto mb-12 flex w-3/5 flex-col items-center justify-center py-24 text-center shadow-xl">
+            <h1 className="mb-4 text-center text-3xl leading-relaxed">
               Comunicações via satélite
             </h1>
-            <p>
+            <p className="text-lg">
               Muitas das comunicações que realizamos, como chamadas telefônicas,
               transmissão de dados e acesso à Internet, dependem de satélites de
               comunicação em órbita ao redor da Terra. Esses satélites fornecem
@@ -130,12 +130,12 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex items-center bg-gray-500">
+        <div className="flex items-center bg-gradient-to-t from-white via-gray-600 to-gray-950">
           <div className="m-12 text-white">
-            <h1 className="mb-4 text-xl">
+            <h1 className="mb-4 text-3xl leading-relaxed">
               Navegando com Precisão: A Revolução do GPS
             </h1>
-            <p>
+            <p className="text-lg">
               O GPS (Global Positioning System) também está no espaço! Desde o
               lançamento do primeiro satélite GPS em 1978, a constelação tem
               crescido, fornecendo cobertura global. Astronautas o utilizam em
