@@ -49,56 +49,48 @@ export default function Home() {
             investimento do exercito dos Estados Unidos.
           </p>
         </div>
-        <div className="flex pt-16 text-justify text-black">
-          <div className="flex flex-col gap-12">
-            <div className="m-12">
-              <h2 className="mb-4 text-xl">Explorando novas fronteiras</h2>
-              <p className="text-gray-800">
-                Investir no setor aeroespacial nos permite expandir nossos
-                horizontes e explorar o desconhecido. Ao fazê-lo, podemos
-                avançar em tecnologias e descobertas que podem ter aplicação
-                direta para resolver problemas terrestres.
-              </p>
-            </div>
-
-            <div>
-              <div className="m-12">
-                <h2 className="mb-4 text-xl">Explorando novas fronteiras</h2>
-                <p className="text-gray-800">
-                  Investir no setor aeroespacial nos permite expandir nossos
-                  horizontes e explorar o desconhecido. Ao fazê-lo, podemos
-                  avançar em tecnologias e descobertas que podem ter aplicação
-                  direta para resolver problemas terrestres.
-                </p>
-              </div>
-            </div>
+        <div className="flex flex-row flex-wrap items-baseline space-y-5 p-12 text-justify text-black">
+          <div className="w-1/2 flex-auto p-8">
+            <h2 className="pb-4 text-xl">Explorando novas fronteiras</h2>
+            <p className="text-base">
+              Investir no setor aeroespacial nos permite expandir nossos
+              horizontes e explorar o desconhecido. Ao fazê-lo, podemos avançar
+              em tecnologias e descobertas que podem ter aplicação direta para
+              resolver problemas terrestres.
+            </p>
           </div>
-          <div className="mt-8 h-[700px] w-2 rounded bg-black"></div>
-          <div className="flex items-center">
-            <div className="flex flex-col gap-12">
-              <div className="m-12">
-                <h2 className="mb-4 text-xl">
-                  Monitoramento e prevenção de desastres naturais
-                </h2>
-                <p className="text-gray-800">
-                  Investir no setor aeroespacial nos permite expandir nossos
-                  horizontes e explorar o desconhecido. Ao fazê-lo, podemos
-                  avançar em tecnologias e descobertas que podem ter aplicação
-                  direta para resolver problemas terrestres.
-                </p>
-              </div>
-              <div className="m-12">
-                <h2 className="mb-4 text-xl">
-                  Monitoramento e prevenção de desastres naturais
-                </h2>
-                <p className="text-gray-800">
-                  Investir no setor aeroespacial nos permite expandir nossos
-                  horizontes e explorar o desconhecido. Ao fazê-lo, podemos
-                  avançar em tecnologias e descobertas que podem ter aplicação
-                  direta para resolver problemas terrestres.
-                </p>
-              </div>
-            </div>
+          <div className="w-1/2 flex-auto p-8">
+            <h2 className="pb-4 text-xl">
+              Monitoramento e prevenção de desastres naturais
+            </h2>
+            <p className="text-base">
+              Satélites são essenciais para o monitoramento ambiental de longo
+              prazo, não apenas em desastres naturais. Eles detectam mudanças
+              climáticas, monitoram recursos hídricos, acompanham a cobertura
+              vegetal e observam padrões climáticos que podem afetar desastres
+              naturais.
+            </p>
+          </div>
+          <div className="w-1/2 flex-auto p-8">
+            <h2 className="pb-4 text-xl">
+              Pesquisa e desenvolvimento tecnológico
+            </h2>
+            <p className="text-base">
+              O lançamento de satélites impulsiona o desenvolvimento de
+              tecnologias inovadoras, como comunicações por satélite, energia
+              solar, materiais leves e duráveis, eletrônica e sistemas de
+              propulsão. Essas inovações têm aplicações em vários setores
+              industriais.
+            </p>
+          </div>
+          <div className="w-1/2 flex-auto p-8">
+            <h2 className="pb-4 text-xl">Segurança e defesa</h2>
+            <p className="text-base">
+              Os satélites desempenham um papel crítico na segurança e defesa de
+              muitos países. Eles são usados para inteligência, vigilância e
+              reconhecimento (ISR), monitoramento de atividades militares,
+              comunicações seguras e detecção de mísseis balísticos.
+            </p>
           </div>
         </div>
       </section>
