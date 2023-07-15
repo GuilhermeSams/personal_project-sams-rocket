@@ -15,6 +15,7 @@ import {
 import { Icons } from '@/components/icons'
 
 import { sharetechmono } from '../../lib/fonts'
+import DropdownMenuDemo from './menuBurger'
 import navbarDataCompany from './navbarDataCompany'
 import navbarDataTransmition from './navbarDataTransmition'
 
@@ -26,9 +27,12 @@ export default function Navbar() {
     <div className={sharetechmono.className}>
       <nav className="relative flex h-14 w-full items-center justify-center bg-background">
         <Link href={'/'}>
-          <h1 className="absolute left-0 top-4 ml-8 text-xl">Sams Rocket</h1>
+          <h1 className="absolute left-0 top-4 ml-8 text-xl ">Sams Rocket</h1>
         </Link>
-        <NavigationMenu>
+        <div className="absolute right-0 mr-8 md:hidden">
+          <DropdownMenuDemo />
+        </div>
+        <NavigationMenu className="hidden md:block">
           <NavigationMenuList className="flex gap-8">
             <NavigationMenuItem>
               <NavigationMenuTrigger>Foguetes</NavigationMenuTrigger>

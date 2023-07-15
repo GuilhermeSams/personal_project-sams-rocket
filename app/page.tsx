@@ -49,9 +49,11 @@ export default function Home() {
             investimento do exercito dos Estados Unidos.
           </p>
         </div>
-        <div className="flex flex-row flex-wrap items-baseline space-y-5 p-12 text-justify text-black">
-          <div className="w-1/2 flex-auto p-8">
-            <h2 className="pb-4 text-xl">Explorando novas fronteiras</h2>
+        <div className="flex flex-col flex-wrap items-baseline space-y-5 p-6 text-justify text-black md:flex-row">
+          <div className="w-full flex-auto p-8 md:w-1/2">
+            <h2 className="pb-4 text-center text-xl">
+              Explorando novas fronteiras
+            </h2>
             <p className="text-base">
               Investir no setor aeroespacial nos permite expandir nossos
               horizontes e explorar o desconhecido. Ao fazê-lo, podemos avançar
@@ -59,8 +61,8 @@ export default function Home() {
               resolver problemas terrestres.
             </p>
           </div>
-          <div className="w-1/2 flex-auto p-8">
-            <h2 className="pb-4 text-xl">
+          <div className="w-full flex-auto p-8 md:w-1/2">
+            <h2 className="pb-4 text-center text-xl">
               Monitoramento e prevenção de desastres naturais
             </h2>
             <p className="text-base">
@@ -71,8 +73,8 @@ export default function Home() {
               naturais.
             </p>
           </div>
-          <div className="w-1/2 flex-auto p-8">
-            <h2 className="pb-4 text-xl">
+          <div className="w-full flex-auto p-8 md:w-1/2">
+            <h2 className="pb-4 text-center text-xl">
               Pesquisa e desenvolvimento tecnológico
             </h2>
             <p className="text-base">
@@ -83,8 +85,8 @@ export default function Home() {
               industriais.
             </p>
           </div>
-          <div className="w-1/2 flex-auto p-8">
-            <h2 className="pb-4 text-xl">Segurança e defesa</h2>
+          <div className="w-full flex-auto p-8 md:w-1/2">
+            <h2 className="pb-4 text-center text-xl">Segurança e defesa</h2>
             <p className="text-base">
               Os satélites desempenham um papel crítico na segurança e defesa de
               muitos países. Eles são usados para inteligência, vigilância e
@@ -110,7 +112,7 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="m-auto mb-12 flex w-3/5 flex-col items-center justify-center py-24 text-center shadow-xl">
+          <div className="m-auto mb-12 flex w-full flex-col items-center justify-center px-6 py-24 text-center shadow-xl md:w-3/5">
             <h1 className="mb-4 text-center text-3xl leading-relaxed">
               Comunicações via satélite
             </h1>
@@ -122,8 +124,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex items-center bg-gradient-to-t from-white via-gray-600 to-gray-950">
-          <div className="m-12 text-white">
+        <div className="flex items-center bg-gradient-to-t from-white via-gray-600 to-gray-950 text-center md:text-justify">
+          <div className="m-12 text-black">
             <h1 className="mb-4 text-3xl leading-relaxed">
               Navegando com Precisão: A Revolução do GPS
             </h1>
@@ -138,7 +140,7 @@ export default function Home() {
               confiança e precisão.
             </p>
           </div>
-          <div className="mx-8">
+          <div className="mx-8 hidden lg:block">
             <Image
               alt="img_gps_city"
               sizes="(max-width: 768px) 100vw"
