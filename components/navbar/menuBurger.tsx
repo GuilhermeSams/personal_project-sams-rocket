@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Menu } from 'lucide-react'
 
 // import { Button } from '@/components/ui/button'
@@ -22,36 +23,24 @@ export default function DropdownMenuDemo() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <span className="ml-2">StarShip</span>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              StarShip
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span className="ml-2">Falcon 9</span>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Falcon 9
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span className="ml-2">Space Shutle</span>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Space Shuttle
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span className="ml-2">Ariane 5</span>
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        <DropdownMenuGroup>
-          <DropdownMenuLabel>Transmissões</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem>
-            <span className="ml-2">Space Orbit</span>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <span className="ml-2">Space Today</span>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <span className="ml-2">Dobra Espacial</span>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <span className="ml-2">Café e Ciencia</span>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <span className="ml-2">Ned Oliveira</span>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Ariane 5
+            </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
@@ -59,22 +48,64 @@ export default function DropdownMenuDemo() {
           <DropdownMenuLabel>Transmissões</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <span className="ml-2">SpaceX</span>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Space Orbit
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span className="ml-2">NASA</span>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Space Today
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span className="ml-2">AEB</span>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Dobra Espacial
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span className="ml-2">Rocket Lab</span>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Café e Ciência
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span className="ml-2">Ariane Space</span>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Ned Oliveira
+            </Link>
+          </DropdownMenuItem>
+        </DropdownMenuGroup>
+        <DropdownMenuSeparator />
+        <DropdownMenuGroup>
+          <DropdownMenuLabel>Transmissões</DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              SpaceX
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span className="ml-2">ULA</span>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Nasa
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              AEB
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Rocket Lab
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              Ariane Space
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link className="ml-2 w-2/3" href={'#'}>
+              ULA
+            </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>

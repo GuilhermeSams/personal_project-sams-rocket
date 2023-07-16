@@ -24,7 +24,7 @@ export default function Home() {
           />
         </div>
         <div className="flex h-screen items-center justify-center">
-          <h1 className="mx-3 w-[50rem] text-center text-4xl leading-relaxed">
+          <h1 className="mx-3 w-[50rem] text-center text-4xl leading-relaxed shadow-xl">
             Porque investir no setor aeroespacial, se ainda temos enormes
             problemas na Terra?
           </h1>
