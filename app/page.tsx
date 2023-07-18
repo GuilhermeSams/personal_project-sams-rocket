@@ -3,6 +3,8 @@ import img_sat from 'public/Satellite-Communications-Systems-Sustainment.jpg'
 import img_gps_city from 'public/gps_city.png'
 import img_bg from 'public/rocketbg.png'
 
+import { Icons } from '@/components/icons'
+
 import { sharetechmono } from '../lib/fonts'
 
 export default function Home() {
@@ -28,6 +30,9 @@ export default function Home() {
             Porque investir no setor aeroespacial, se ainda temos enormes
             problemas na Terra?
           </h1>
+          <div className="absolute bottom-20">
+            <Icons.arrowDown />
+          </div>
         </div>
       </section>
       <section className="h-full max-w-full">
