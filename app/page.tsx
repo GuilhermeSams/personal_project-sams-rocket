@@ -24,14 +24,14 @@ export default function Home() {
           />
         </div>
         <div className="flex h-screen items-center justify-center">
-          <h1 className="mx-3 w-[50rem] text-center text-4xl leading-relaxed shadow-xl">
+          <h1 className="mx-3 w-[70rem] border-b text-center text-2xl font-semibold leading-relaxed sm:text-5xl ">
             Porque investir no setor aeroespacial, se ainda temos enormes
             problemas na Terra?
           </h1>
         </div>
       </section>
       <section className="h-full max-w-full">
-        <div className="mx-auto w-3/4 pb-12	text-center	text-xl text-black">
+        <div className="mx-auto w-full px-8 pb-12	text-center	text-xl text-black md:w-4/5">
           <p className="mb-6 pt-12">
             Quando pensamos em foguetes e missões aeroespaciais temos uma falsa
             premissa de está sendo injetada uma quantidade exorbitante de
@@ -50,22 +50,22 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col flex-wrap items-baseline space-y-5 p-6 text-justify text-black md:flex-row">
-          <div className="w-full flex-auto p-8 md:w-1/2">
+          <div className="w-full flex-auto p-4 md:w-1/2">
             <h2 className="pb-4 text-center text-xl">
               Explorando novas fronteiras
             </h2>
-            <p className="text-base">
+            <p className="border-l-2 pl-6 text-base">
               Investir no setor aeroespacial nos permite expandir nossos
               horizontes e explorar o desconhecido. Ao fazê-lo, podemos avançar
               em tecnologias e descobertas que podem ter aplicação direta para
               resolver problemas terrestres.
             </p>
           </div>
-          <div className="w-full flex-auto p-8 md:w-1/2">
+          <div className="w-full flex-auto p-4 md:w-1/2">
             <h2 className="pb-4 text-center text-xl">
               Monitoramento e prevenção de desastres naturais
             </h2>
-            <p className="text-base">
+            <p className="border-l-2 pl-6 text-base">
               Satélites são essenciais para o monitoramento ambiental de longo
               prazo, não apenas em desastres naturais. Eles detectam mudanças
               climáticas, monitoram recursos hídricos, acompanham a cobertura
@@ -73,11 +73,11 @@ export default function Home() {
               naturais.
             </p>
           </div>
-          <div className="w-full flex-auto p-8 md:w-1/2">
+          <div className="w-full flex-auto p-4 md:w-1/2">
             <h2 className="pb-4 text-center text-xl">
               Pesquisa e desenvolvimento tecnológico
             </h2>
-            <p className="text-base">
+            <p className="border-l-2 pl-6 text-base">
               O lançamento de satélites impulsiona o desenvolvimento de
               tecnologias inovadoras, como comunicações por satélite, energia
               solar, materiais leves e duráveis, eletrônica e sistemas de
@@ -85,9 +85,9 @@ export default function Home() {
               industriais.
             </p>
           </div>
-          <div className="w-full flex-auto p-8 md:w-1/2">
+          <div className="w-full flex-auto p-4 md:w-1/2">
             <h2 className="pb-4 text-center text-xl">Segurança e defesa</h2>
-            <p className="text-base">
+            <p className="border-l-2 pl-6 text-base">
               Os satélites desempenham um papel crítico na segurança e defesa de
               muitos países. Eles são usados para inteligência, vigilância e
               reconhecimento (ISR), monitoramento de atividades militares,
@@ -124,7 +124,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex items-center bg-gradient-to-t from-white via-gray-600 to-gray-950 text-center md:text-justify">
+        <div className="flex items-center bg-gradient-to-t from-white via-gray-400 to-gray-800 text-center md:text-justify">
           <div className="m-12 text-black">
             <h1 className="mb-4 text-3xl leading-relaxed">
               Navegando com Precisão: A Revolução do GPS
