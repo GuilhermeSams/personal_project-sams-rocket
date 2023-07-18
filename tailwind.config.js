@@ -52,7 +52,7 @@ module.exports = {
         },
       },
       height: {
-        '70vh': '70vh',
+        '80vh': '80vh',
       },
       borderRadius: {
         lg: 'var(--radius)',

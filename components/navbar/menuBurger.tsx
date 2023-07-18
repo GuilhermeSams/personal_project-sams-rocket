@@ -18,7 +18,7 @@ export default function DropdownMenuDemo() {
       <DropdownMenuTrigger asChild>
         <Menu className="cursor-pointer text-right" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="h-70vh w-56 overflow-auto text-right">
+      <DropdownMenuContent className="h-80vh w-56 overflow-auto text-right">
         <DropdownMenuLabel>Foguetes</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
@@ -75,7 +75,7 @@ export default function DropdownMenuDemo() {
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuLabel>Transmissões</DropdownMenuLabel>
+          <DropdownMenuLabel>Empresas</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
             <Link className="mr-2" href={'#'}>
