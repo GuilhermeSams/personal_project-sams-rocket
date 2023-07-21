@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import img_sat from 'public/Satellite-Communications-Systems-Sustainment.jpg'
 import img_gps_city from 'public/gps_city.png'
-import img_bg from 'public/rocketbg.png'
+import img_bg from 'public/rocket-transparent.png'
 
 import { Icons } from '@/components/icons'
 
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className={sharetechmono.className}>
       <section className="relative">
-        <div className="absolute z-[-1] h-screen w-screen max-w-full">
+        <div className="absolute z-[-1] h-screen w-screen max-w-full bg-gray-300">
           <Image
             alt="img_rocket"
             src={img_bg}
@@ -26,7 +26,7 @@ export default function Home() {
           />
         </div>
         <div className="flex h-screen items-center justify-center">
-          <h1 className="mx-3 w-[70rem] border-b text-center text-2xl font-semibold leading-relaxed sm:text-5xl ">
+          <h1 className="mx-3 w-[70rem] text-center text-2xl leading-relaxed sm:text-4xl">
             Porque investir no setor aeroespacial, se ainda temos enormes
             problemas na Terra?
           </h1>

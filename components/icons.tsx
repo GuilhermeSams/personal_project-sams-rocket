@@ -47,7 +47,7 @@ export const Icons = {
   arrowDown: () => (
     <svg
       className="animate-bounce"
-      fill="#ffffff"
+      fill="#030711"
       height="32px"
       width="32px"
       version="1.1"
