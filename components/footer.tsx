@@ -35,16 +35,28 @@ export default function Footer() {
           <div>
             <h2 className="text-lg">Foguetes</h2>
             <div className="flex flex-col  text-base text-gray-900">
-              <Link className="my-2 hover:text-black" href={'#'}>
+              <Link
+                className="my-2 hover:text-black"
+                href={'/foguetes/starship'}
+              >
                 Starship
               </Link>
-              <Link className="my-2 hover:text-black" href={'#'}>
+              <Link
+                className="my-2 hover:text-black"
+                href={'/foguetes/falcon9'}
+              >
                 Falcon 9
               </Link>
-              <Link className="my-2 hover:text-black" href={'#'}>
+              <Link
+                className="my-2 hover:text-black"
+                href={'/foguetes/spaceshuttle'}
+              >
                 Space Shuttle
               </Link>
-              <Link className="my-2 hover:text-black" href={'#'}>
+              <Link
+                className="my-2 hover:text-black"
+                href={'/foguetes/ariane5'}
+              >
                 Ariane 5
               </Link>
             </div>

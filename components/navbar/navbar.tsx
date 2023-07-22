@@ -40,9 +40,9 @@ export default function Navbar() {
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3">
                     <NavigationMenuLink asChild>
-                      <a
+                      <Link
+                        href={'/foguetes/starship'}
                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                        href="/"
                       >
                         <Icons.logo />
                         <div className="mb-2 mt-4 text-lg font-medium">
@@ -52,21 +52,27 @@ export default function Navbar() {
                           Um gigante imponente, desbravando o cosmos com poder
                           inigualável
                         </p>
-                      </a>
+                      </Link>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem href="#" title="Falcon 9">
-                    Com mais de 200 lançamentos, o mais reutilizável e barato do
-                    mercado.
-                  </ListItem>
-                  <ListItem href="#" title="Space Shuttle">
-                    Usado para varias missões da NASA, uma delas o Telescópio
-                    Hubble
-                  </ListItem>
-                  <ListItem href="#" title="Ariane 5">
-                    O Ariane 5 ficou bem conhecido após, lanças o telescópio
-                    James Webb
-                  </ListItem>
+                  <Link href={'/foguetes/falcon9'}>
+                    <ListItem title="Falcon 9">
+                      Com mais de 200 lançamentos, o mais reutilizável e barato
+                      do mercado.
+                    </ListItem>
+                  </Link>
+                  <Link href={'/foguetes/spaceshuttle'}>
+                    <ListItem title="Space Shuttle">
+                      Usado para varias missões da NASA, uma delas o Telescópio
+                      Hubble
+                    </ListItem>
+                  </Link>
+                  <Link href={'/foguetes/ariane5'}>
+                    <ListItem title="Ariane 5">
+                      O Ariane 5 ficou bem conhecido após, lanças o telescópio
+                      James Webb
+                    </ListItem>
+                  </Link>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
