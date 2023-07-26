@@ -25,10 +25,10 @@ export default function Home() {
             }}
           />
         </div>
-        <div className="flex h-screen items-center justify-center">
-          <h1 className="mx-3 w-[70rem] text-center text-2xl leading-relaxed sm:text-4xl">
-            Porque investir no setor aeroespacial, se ainda temos enormes
-            problemas na Terra?
+        <div className="flex h-screen items-start justify-center">
+          <h1 className="mx-3 my-24 w-[70rem] text-center text-5xl font-extrabold max-sm:text-4xl md:text-7xl">
+            Porque investir no espaço, se ainda temos enormes problemas na
+            Terra?
           </h1>
           <div className="absolute bottom-20">
             <Icons.arrowDown />
@@ -41,10 +41,10 @@ export default function Home() {
             Quando pensamos em foguetes e missões aeroespaciais temos uma falsa
             premissa de está sendo injetada uma quantidade exorbitante de
             dinheiro neste setor. E surge a pergunta: Porque gastar tanto
-            dinheiro nessas missões, sendo que há muitos problemas na Terra,
-            como a fome. E você não está errado em levar essa premissa ao
-            pensamento, entretando há muitos setores de outra parte que gastam
-            10 vezes mais que o setor aeroespacial.
+            dinheiro nessas missões, sendo que há muitos problemas na Terra. E
+            você não está errado em levar essa premissa ao pensamento,
+            entretando há muitos setores de outra parte que gastam 10 vezes mais
+            que o setor aeroespacial.
           </p>
           <p>
             O orçamento da NASA para o ano fiscal (FY) de 2020 é de US$ 22.6

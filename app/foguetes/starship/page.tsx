@@ -9,9 +9,9 @@ export default function Starship() {
   return (
     <>
       <div className={sharetechmono.className}>
-        <div className="flex">
+        <div className="flex h-[93vh]">
           <div
-            className="h-screen w-[550px] flex-none bg-gray-900 text-black"
+            className="w-[550px] flex-none bg-gray-900 text-black"
             style={{
               borderTopRightRadius: '40px',
               borderBottomRightRadius: '40px',
@@ -31,7 +31,7 @@ export default function Starship() {
           </div>
           <div className="mr-auto flex w-full items-start text-black ">
             <div>
-              <ScrollArea className="h-screen rounded-md p-4">
+              <ScrollArea className="h-[93vh] rounded-md p-4">
                 <div className="m-4 mb-8">
                   <h1 className="text-6xl opacity-100">Starship</h1>
                   <p className="opacity-70">
