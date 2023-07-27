@@ -9,9 +9,9 @@ export default function Starship() {
   return (
     <>
       <div className={sharetechmono.className}>
-        <div className="flex h-[93vh]">
+        <div className="flex h-[93vh] max-[1000px]:h-full">
           <div
-            className="w-[550px] flex-none bg-gray-900 text-black"
+            className="w-[550px] flex-none bg-gray-900 text-black max-[1000px]:hidden"
             style={{
               borderTopRightRadius: '40px',
               borderBottomRightRadius: '40px',
@@ -29,9 +29,9 @@ export default function Starship() {
               }}
             />
           </div>
-          <div className="mr-auto flex w-full items-start text-black ">
-            <div>
-              <ScrollArea className="h-[93vh] rounded-md p-4">
+          <div className="mr-auto flex max-w-full items-start text-black">
+            <div className="max-[1000px]:max-w-full">
+              <ScrollArea className="h-[93vh] rounded-md max-[1000px]:h-full">
                 <div className="m-4 mb-8">
                   <h1 className="text-6xl opacity-100">Starship</h1>
                   <p className="opacity-70">
@@ -50,7 +50,7 @@ export default function Starship() {
                     150 toneladas métricas totalmente reutilizáveis e 250
                     toneladas métricas descartáveis.
                   </p>
-                  <div className="mb-8 mt-4 w-[350px] space-y-4 font-semibold">
+                  <div className="mb-8 mt-4 flex w-[330px] flex-col space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
                     <div className="flex border-b border-gray-600">
                       <h3>Altura</h3>
                       <p className="ml-auto">120 m</p>
@@ -76,7 +76,7 @@ export default function Starship() {
                     capaz de transportar ponto a ponto na Terra, permitindo
                     viajar para qualquer lugar do mundo em uma hora ou menos.
                   </p>
-                  <div className="mb-8 mt-4 w-[350px] space-y-4 font-semibold	">
+                  <div className="mb-8 mt-4 flex w-[330px] flex-col	space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
                     <div className="flex border-b border-gray-600">
                       <h3>Altura</h3>
                       <p className="ml-auto">50 m</p>
@@ -111,7 +111,7 @@ export default function Starship() {
                     reentrar na atmosfera da Terra para pousar de volta no local
                     de lançamento.
                   </p>
-                  <div className="mb-8 mt-4 w-[350px] space-y-4 font-semibold	">
+                  <div className="mb-8 mt-4 flex w-[330px] flex-col space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
                     <div className="flex border-b border-gray-600">
                       <h3>Altura</h3>
                       <p className="ml-auto">69 m</p>
