@@ -23,22 +23,22 @@ export default function DropdownMenuDemo() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
+            <Link className="mr-2" href={'/foguetes/starship'}>
               StarShip
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
+            <Link className="mr-2" href={'/foguetes/falcon9'}>
               Falcon 9
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
+            <Link className="mr-2" href={'/foguetes/spaceshuttle'}>
               Space Shuttle
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
+            <Link className="mr-2" href={'/foguetes/ariane5'}>
               Ariane 5
             </Link>
           </DropdownMenuItem>
