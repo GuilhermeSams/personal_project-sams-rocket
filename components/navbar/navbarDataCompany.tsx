@@ -44,7 +44,7 @@ export default function navbarDataCompany(): Company[] {
     },
     {
       id: 6,
-      title: 'United Launch Alliance (ULA)',
+      title: 'ULA',
       href: '#',
       description:
         'Parceria Boeing-Lockheed Martin, líder em lançamentos confiáveis e inovadores',
