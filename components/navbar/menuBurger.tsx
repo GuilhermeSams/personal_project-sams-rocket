@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { Menu } from 'lucide-react'
 
@@ -13,102 +14,129 @@ import {
 } from '@/components/ui/dropdown-menu'
 
 export default function DropdownMenuDemo() {
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false)
+
+  const handleLinkClick = () => {
+    setIsDropdownVisible(false)
+  }
+
+  const toggleDropdown = () => {
+    setIsDropdownVisible((prev) => !prev)
+  }
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Menu className="cursor-pointer text-right" />
+        <Menu onClick={toggleDropdown} className="cursor-pointer text-right" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="h-80vh w-56 overflow-auto text-right">
-        <DropdownMenuLabel>Foguetes</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <DropdownMenuGroup>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'/foguetes/starship'}>
-              StarShip
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'/foguetes/falcon9'}>
-              Falcon 9
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'/foguetes/spaceshuttle'}>
-              Space Shuttle
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'/foguetes/ariane5'}>
-              Ariane 5
-            </Link>
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        <DropdownMenuGroup>
-          <DropdownMenuLabel>Transmissões</DropdownMenuLabel>
+      {isDropdownVisible && (
+        <DropdownMenuContent className="h-80vh w-56 overflow-auto text-right">
+          <DropdownMenuLabel>Foguetes</DropdownMenuLabel>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              Space Orbit
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              Space Today
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              Dobra Espacial
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              Café e Ciência
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              Ned Oliveira
-            </Link>
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        <DropdownMenuGroup>
-          <DropdownMenuLabel>Empresas</DropdownMenuLabel>
+          <DropdownMenuGroup>
+            <DropdownMenuItem>
+              <Link
+                onClick={handleLinkClick}
+                className="mr-2"
+                href={'/foguetes/starship'}
+              >
+                StarShip
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link
+                onClick={handleLinkClick}
+                className="mr-2"
+                href={'/foguetes/falcon9'}
+              >
+                Falcon 9
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link
+                onClick={handleLinkClick}
+                className="mr-2"
+                href={'/foguetes/spaceshuttle'}
+              >
+                Space Shuttle
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link
+                onClick={handleLinkClick}
+                className="mr-2"
+                href={'/foguetes/ariane5'}
+              >
+                Ariane 5
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuGroup>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              SpaceX
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              Nasa
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              AEB
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              Rocket Lab
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              Ariane Space
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link className="mr-2" href={'#'}>
-              ULA
-            </Link>
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
-      </DropdownMenuContent>
+          <DropdownMenuGroup>
+            <DropdownMenuLabel>Transmissões</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                Space Orbit
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                Space Today
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                Dobra Espacial
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                Café e Ciência
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                Ned Oliveira
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuGroup>
+          <DropdownMenuSeparator />
+          <DropdownMenuGroup>
+            <DropdownMenuLabel>Empresas</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                SpaceX
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                Nasa
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                AEB
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                Rocket Lab
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                Ariane Space
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+                ULA
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuGroup>
+        </DropdownMenuContent>
+      )}
     </DropdownMenu>
   )
 }
