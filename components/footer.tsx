@@ -14,11 +14,11 @@ export default function Footer() {
   return (
     <div className={sharetechmono.className}>
       <div className="bg-gray-300 bg-gradient-to-b from-white via-gray-400 to-gray-600 ">
-        <div className="flex justify-center bg-red-300 py-12 text-black">
-          <div className="flex flex-wrap gap-x-32 gap-y-2 bg-green-300 max-[734px]:gap-x-8">
+        <div className="flex justify-center py-12 text-black">
+          <div className="flex flex-wrap gap-x-32 gap-y-2 max-[734px]:gap-x-8">
             <div>
               <h2 className="text-lg max-[734px]:text-base">Foguetes</h2>
-              <div className="flex flex-col  text-base text-gray-900 max-[734px]:text-sm">
+              <div className="flex flex-col  text-base max-[734px]:text-sm">
                 <Link
                   className="my-2 hover:text-black"
                   href={'/foguetes/starship'}
