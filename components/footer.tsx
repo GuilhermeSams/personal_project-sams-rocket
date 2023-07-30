@@ -13,32 +13,32 @@ export default function Footer() {
   const dataCompany = navbarDataCompany()
   return (
     <div className={sharetechmono.className}>
-      <div className="bg-gray-300 bg-gradient-to-b from-white via-gray-400 to-gray-600 ">
+      <div className=" bg-gray-300 bg-gradient-to-b from-white via-gray-400 to-gray-600 ">
         <div className="flex justify-center py-12 text-black">
-          <div className="flex flex-wrap gap-x-32 gap-y-2 max-[734px]:gap-x-8">
+          <div className="flex flex-wrap justify-evenly gap-x-32 gap-y-2 max-[734px]:gap-x-9 max-[370px]:text-center">
             <div>
               <h2 className="text-lg max-[734px]:text-base">Foguetes</h2>
-              <div className="flex flex-col  text-base max-[734px]:text-sm">
+              <div className="flex flex-col text-base max-[734px]:text-sm">
                 <Link
-                  className="my-2 hover:text-black"
+                  className="my-2 opacity-70 hover:opacity-100"
                   href={'/foguetes/starship'}
                 >
                   Starship
                 </Link>
                 <Link
-                  className="my-2 hover:text-black"
+                  className="my-2 opacity-70 hover:opacity-100"
                   href={'/foguetes/falcon9'}
                 >
                   Falcon 9
                 </Link>
                 <Link
-                  className="my-2 hover:text-black"
+                  className="my-2 opacity-70 hover:opacity-100"
                   href={'/foguetes/spaceshuttle'}
                 >
                   Space Shuttle
                 </Link>
                 <Link
-                  className="my-2 hover:text-black"
+                  className="my-2 opacity-70 hover:opacity-100"
                   href={'/foguetes/ariane5'}
                 >
                   Ariane 5
@@ -50,7 +50,10 @@ export default function Footer() {
               <ul className="flex flex-col text-base text-gray-900 max-[734px]:text-sm">
                 {dataTransmition.map((item) => (
                   <li key={item.id} className="my-2">
-                    <Link className="hover:text-black" href={item.href}>
+                    <Link
+                      className="opacity-70 hover:opacity-100"
+                      href={item.href}
+                    >
                       {item.title}
                     </Link>
                   </li>
@@ -62,7 +65,10 @@ export default function Footer() {
               <ul className="flex flex-col text-base text-gray-900 max-[734px]:text-sm">
                 {dataCompany.map((item) => (
                   <li key={item.id} className="my-2">
-                    <Link className="hover:text-black" href={item.href}>
+                    <Link
+                      className="opacity-70 hover:opacity-100"
+                      href={item.href}
+                    >
                       {item.title}
                     </Link>
                   </li>
