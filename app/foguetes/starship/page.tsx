@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import img_startship_mobile from 'public/img_starship_por__do_sol.jpg'
 import img_startship_sidebar from 'public/starship_spacex.jpg'
 
 import { ScrollArea } from '@/components/ui/scroll-area'
@@ -50,6 +51,15 @@ export default function Starship() {
                     150 toneladas métricas totalmente reutilizáveis e 250
                     toneladas métricas descartáveis.
                   </p>
+                  <div className="min-[900px]:hidden">
+                    <Image
+                      className="my-4 rounded-3xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+                      src={img_startship_mobile}
+                      width={500}
+                      height={500}
+                      alt="Imagem da Startship"
+                    />
+                  </div>
                   <div className="mb-8 mt-4 flex w-[330px] flex-col space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
                     <div className="flex border-b border-gray-600">
                       <h3>Altura</h3>
