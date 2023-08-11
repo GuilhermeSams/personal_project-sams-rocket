@@ -10,7 +10,7 @@ export default function Starship() {
   return (
     <>
       <div className={sharetechmono.className}>
-        <div className="flex h-[93vh] max-[1000px]:h-full">
+        <div className="mt-14 flex h-[93vh] max-[1000px]:h-full">
           <div
             className="w-[550px] flex-none bg-gray-900 text-black max-[1000px]:hidden"
             style={{

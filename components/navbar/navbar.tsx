@@ -45,13 +45,12 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll)
 
     return () => {
-      // Cleanup: Remove the event listener when the component unmounts
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
   return (
-    <div className="mb-14">
+    <div className="">
       <div id="navbar" className="fixed top-0 z-[1] w-full transition-all">
         <div className={sharetechmono.className}>
           <nav className="relative flex h-14 w-full items-center justify-center bg-background">

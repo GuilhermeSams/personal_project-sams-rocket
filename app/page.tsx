@@ -26,11 +26,11 @@ export default function Home() {
           />
         </div>
         <div className="flex h-screen items-start justify-center">
-          <h1 className="mx-3 my-24 w-[70rem] text-center text-5xl font-extrabold max-sm:text-4xl md:text-7xl">
+          <h1 className="mx-3 my-24 w-[70rem] pt-14 text-center text-5xl font-extrabold max-sm:text-4xl md:text-7xl">
             Porque investir no espaço, se ainda temos enormes problemas na
             Terra?
           </h1>
-          <div className="absolute bottom-20">
+          <div className="absolute bottom-10">
             <Icons.arrowDown />
           </div>
         </div>

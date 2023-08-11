@@ -10,7 +10,7 @@ export default function navbarDataTransmition(): Transmition[] {
     {
       id: 1,
       title: 'Space Orbit',
-      href: '#',
+      href: '/transmissoes/space-orbit',
       description:
         'Pedro Palota, dono do canal no Youtube chamado Space Orbit, faz live de lançamento de foguetes.',
     },

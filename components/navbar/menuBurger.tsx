@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Menu } from 'lucide-react'
 
@@ -23,6 +23,10 @@ export default function DropdownMenuDemo() {
   const toggleDropdown = () => {
     setIsDropdownVisible((prev) => !prev)
   }
+  useEffect(() => {
+    console.log('O estado isDropdownVisible mudou:', isDropdownVisible)
+  }, [isDropdownVisible])
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
