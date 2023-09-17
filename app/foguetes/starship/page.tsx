@@ -10,9 +10,9 @@ export default function Starship() {
   return (
     <>
       <div className={sharetechmono.className}>
-        <div className="mt-14 flex h-[93vh] max-[1000px]:h-full">
+        <div className="mt-14 flex h-[94.5vh] max-[1000px]:h-full">
           <div
-            className="w-[550px] flex-none bg-gray-900 text-black max-[1000px]:hidden"
+            className="h-full w-[550px] flex-none bg-gray-900 text-black max-[1000px]:hidden"
             style={{
               borderTopRightRadius: '40px',
               borderBottomRightRadius: '40px',
@@ -20,7 +20,7 @@ export default function Starship() {
             }}
           >
             <Image
-              className="w-full bg-black"
+              className="h-full w-full bg-black"
               src={img_startship_sidebar}
               alt="Starship da SpaceX"
               height={1080}
