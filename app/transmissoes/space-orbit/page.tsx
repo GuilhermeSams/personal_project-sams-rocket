@@ -29,7 +29,7 @@ export default function SpaceOrbit() {
             voluptatibus ea similique ullam sint nisi blanditiis.
           </p>
         </div>
-        <div className="flex flex-row gap-4 rounded-full pb-4">
+        <ul className="flex flex-row gap-4 rounded-full pb-4">
           <a
             className="h-8 w-8 scale-100 rounded-full transition-none duration-0 md:transition md:delay-0 md:ease-in-out md:hover:scale-125"
             href="https://www.youtube.com/@SpaceOrbit"
@@ -54,7 +54,7 @@ export default function SpaceOrbit() {
           >
             <Icons.store />
           </a>
-        </div>
+        </ul>
       </div>
     </main>
   )
