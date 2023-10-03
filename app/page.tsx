@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </section>
       <section className="h-full max-w-full">
-        <div className="mx-auto w-full px-8 pb-12	text-center	text-xl text-black md:w-4/5">
+        <div className="mx-auto	w-full px-8 pb-12 text-center text-xl text-black md:w-4/5 ">
           <p className="mb-6 pt-12">
             Quando pensamos em foguetes e missões aeroespaciais temos uma falsa
             premissa de está sendo injetada uma quantidade exorbitante de
@@ -55,9 +55,9 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col flex-wrap items-baseline space-y-5 p-6 text-justify text-black md:flex-row">
-          <div className="w-full flex-auto p-4 md:w-1/2">
+          <div className="w-full flex-auto animate-fade-right p-4 md:w-1/2">
             <h2 className="pb-4 text-center text-xl">
-              Explorando novas fronteiras
+              Explorando novas fronteiras,
             </h2>
             <p className="border-l-2 pl-6 text-base">
               Investir no setor aeroespacial nos permite expandir nossos
