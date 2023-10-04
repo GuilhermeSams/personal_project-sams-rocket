@@ -1,16 +1,12 @@
-# next-template
-
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
-
+## Deploy na Web
+- https://personal-project-sams-rocket-ojkn.vercel.app/
+- OBS: A cada semana eu atualizarei o link
+- 
 ## Usage
-
-```bash
-npx create-next-app -e https://github.com/shadcn/next-template
-```
 
 ## Features
 
-- Next.js 13 App Directory
+- Next.js v18
 - Radix UI Primitives
 - Tailwind CSS
 - Icons from [Lucide](https://lucide.dev)
