@@ -61,15 +61,15 @@ export default function Starship() {
                     />
                   </div>
                   <div className="mb-8 mt-4 flex w-[330px] flex-col space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-100">
                       <h3>Altura</h3>
                       <p className="ml-auto">120 m</p>
                     </div>
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-200">
                       <h3>Diâmetro</h3>
                       <p className="ml-auto">9 m</p>
                     </div>
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-300">
                       <h2>Capacidade de Carga</h2>
                       <p className="ml-auto">100 – 150 t</p>
                     </div>
@@ -87,23 +87,23 @@ export default function Starship() {
                     viajar para qualquer lugar do mundo em uma hora ou menos.
                   </p>
                   <div className="mb-8 mt-4 flex w-[330px] flex-col	space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[400ms]">
                       <h3>Altura</h3>
                       <p className="ml-auto">50 m</p>
                     </div>
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[500ms]">
                       <h3>Diâmetro</h3>
                       <p className="ml-auto">9 m</p>
                     </div>
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[600ms]">
                       <h2>Capacidade de Combustível</h2>
                       <p className="ml-auto">1,200 t</p>
                     </div>
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[700ms]">
                       <h3>Força de Impulso</h3>
                       <p className="ml-auto">1,500 tf</p>
                     </div>
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[800ms]">
                       <h2>Capacidade de Carga</h2>
                       <p className="ml-auto">100 - 150 t</p>
                     </div>
@@ -122,19 +122,19 @@ export default function Starship() {
                     de lançamento.
                   </p>
                   <div className="mb-8 mt-4 flex w-[330px] flex-col space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[900ms]">
                       <h3>Altura</h3>
                       <p className="ml-auto">69 m</p>
                     </div>
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[1000ms]">
                       <h3>Diâmetro</h3>
                       <p className="ml-auto">9 m</p>
                     </div>
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[1100ms]">
                       <h2>Capacidade de Combustível</h2>
                       <p className="ml-auto">3,400 t</p>
                     </div>
-                    <div className="flex border-b border-gray-600">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[1200ms]">
                       <h3>Força de Impulso</h3>
                       <p className="ml-auto">7,590 tf</p>
                     </div>

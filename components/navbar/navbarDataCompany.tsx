@@ -10,7 +10,7 @@ export default function navbarDataCompany(): Company[] {
     {
       id: 1,
       title: 'SpaceX',
-      href: '#',
+      href: '/empresas/spacex',
       description:
         'A SpaceX é uma empresa privada revolucionária de exploração espacial.',
     },

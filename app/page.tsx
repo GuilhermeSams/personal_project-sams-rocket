@@ -57,7 +57,7 @@ export default function Home() {
         <div className="flex flex-col flex-wrap items-baseline space-y-5 p-6 text-justify text-black md:flex-row">
           <div className="w-full flex-auto animate-fade-right p-4 md:w-1/2">
             <h2 className="pb-4 text-center text-xl">
-              Explorando novas fronteiras,
+              Explorando novas fronteiras
             </h2>
             <p className="border-l-2 pl-6 text-base">
               Investir no setor aeroespacial nos permite expandir nossos
