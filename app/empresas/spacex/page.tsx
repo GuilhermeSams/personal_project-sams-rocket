@@ -29,8 +29,11 @@ export default function SpaceX() {
             <div className="flex">
               <Icons.spacexName />
             </div>
-            <div className="ml-auto mt-8 flex pr-28 max-[480px]:mr-auto max-[480px]:pr-0">
-              <Button className="w-32" variant="outline">
+            <div className="ml-auto mt-8 flex pr-28">
+              <Button
+                className="max-[480px]:absolute max-[480px]:left-1/2 max-[480px]:top-2/3 max-[480px]:-translate-x-1/2 max-[480px]:-translate-y-1/2"
+                variant="outline"
+              >
                 Site Oficial
               </Button>
             </div>
