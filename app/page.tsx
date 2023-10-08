@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className={sharetechmono.className}>
       <section className="relative">
-        <div className="absolute z-[-1] h-screen w-screen max-w-full bg-gray-300">
+        <div className="absolute z-[-1] min-h-[100svh] w-screen max-w-full bg-gray-300">
           <Image
             alt="img_rocket"
             src={img_bg}
@@ -25,7 +25,7 @@ export default function Home() {
             }}
           />
         </div>
-        <div className="flex h-screen items-start justify-center">
+        <div className="flex min-h-[100svh] items-start justify-center">
           <h1 className="mx-3 my-24 w-[70rem] pt-14 text-center text-5xl font-extrabold max-sm:text-4xl md:text-7xl">
             Porque investir no espaço, se ainda temos enormes problemas na
             Terra?

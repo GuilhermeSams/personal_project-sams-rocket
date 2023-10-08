@@ -79,7 +79,11 @@ export default function DropdownMenuDemo() {
             <DropdownMenuLabel>Transmissões</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={handleLinkClick}
+                className="mr-2"
+                href={'/transmissoes/space-orbit'}
+              >
                 Space Orbit
               </Link>
             </DropdownMenuItem>
@@ -109,7 +113,11 @@ export default function DropdownMenuDemo() {
             <DropdownMenuLabel>Empresas</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={handleLinkClick}
+                className="mr-2"
+                href={'/empresas/spacex'}
+              >
                 SpaceX
               </Link>
             </DropdownMenuItem>
