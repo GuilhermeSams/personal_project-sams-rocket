@@ -67,12 +67,14 @@ export default function SpaceOrbit() {
               SuperHeavy.
             </p>
           </div>
-          <div className="mx-auto max-w-screen-xl	animate-fade-up py-4 animate-delay-300">
-            <video
-              className="mx-auto w-11/12 rounded-2xl"
-              controls
-              src={require('../../../public/starship-test.mp4')}
-            />
+          <div className="mx-auto animate-fade-up py-4 animate-delay-300">
+            <iframe
+              className="mx-auto aspect-video w-5/6 rounded-2xl"
+              src="https://www.youtube.com/embed/LizMO0dK43U?si=eVVnZ5SicF91kDQk"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen={true}
+            ></iframe>
           </div>
         </div>
       </div>
