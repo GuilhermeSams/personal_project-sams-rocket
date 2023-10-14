@@ -19,10 +19,10 @@ type infoRocket = {
 
 export default function CardRocketsLeft(props: infoRocket) {
   return (
-    <div className="mr-12 flex flex-col items-end rounded-r-xl bg-black p-8 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] max-[744px]:mr-0 max-[744px]:rounded-xl">
-      <div className="flex items-center max-[744px]:flex-col-reverse">
+    <div className="mr-12 flex flex-col items-end rounded-r-xl bg-black py-8 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] max-[744px]:mr-0 max-[744px]:rounded-xl max-[744px]:shadow-none">
+      <div className="mx-auto flex items-center max-[744px]:flex-col-reverse">
         <div className="mr-16 max-[744px]:mr-0">
-          <div className="mb-8 ml-auto mt-4 flex w-[330px] flex-col space-y-8 font-semibold text-white max-[744px]:mx-auto max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
+          <div className="mb-8 ml-auto mt-4 flex w-[330px] flex-col space-y-8 font-semibold text-white max-[744px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
             <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[400ms]">
               <h3>{props.height}</h3>
               <p className="ml-auto">{props.heightData}</p>
@@ -44,11 +44,11 @@ export default function CardRocketsLeft(props: infoRocket) {
               <p className="ml-auto">{props.cargaGtoData}</p>
             </div>
           </div>
-          <div className="ml-auto w-3/4 text-right max-[744px]:mx-auto max-[744px]:w-4/5 max-[744px]:text-center">
+          <div className="ml-auto w-3/4 text-right max-[744px]:mx-auto max-[744px]:w-4/5 max-[744px]:text-justify">
             <p className="text-white">{props.description}</p>
           </div>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center pr-8 max-[744px]:pr-0">
           <div className="">
             <h2 className="text-center text-3xl text-white sm:text-4xl">
               {props.nameRocket}
