@@ -50,7 +50,10 @@ export default function CardRocketsLeft(props: infoRocket) {
         </div>
         <div className="flex flex-col items-center">
           <div className="">
-            <h2 className="text-center text-4xl text-white">
+            <h2
+              className="text-4xl text-white"
+              style={{ whiteSpace: 'nowrap' }}
+            >
               {props.nameRocket}
             </h2>
           </div>
