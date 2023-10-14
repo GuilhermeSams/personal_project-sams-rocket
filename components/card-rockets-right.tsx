@@ -20,12 +20,12 @@ type infoRocket = {
 
 export default function CardRocketsRight(props: infoRocket) {
   return (
-    <div className="ml-12 rounded-l-xl bg-black p-8 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]">
-      <div className="flex items-center">
+    <div className="ml-12 rounded-l-xl bg-black p-8 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] max-[744px]:ml-0 max-[744px]:rounded-xl">
+      <div className="flex items-center max-[744px]:flex-col">
         <div className="flex flex-col items-center">
           <div>
             <h2
-              className="text-4xl text-white"
+              className="text-3xl text-white sm:text-4xl"
               style={{ whiteSpace: 'nowrap' }}
             >
               {props.nameRocket}
@@ -45,7 +45,7 @@ export default function CardRocketsRight(props: infoRocket) {
             </div>
           </div>
         </div>
-        <div className="ml-24">
+        <div className="pl-24 max-[850px]:pl-12 max-[744px]:flex max-[744px]:flex-col max-[744px]:items-center max-[744px]:pl-0">
           <div className="mb-8 mt-4 flex w-[330px] flex-col	space-y-8 font-semibold text-white max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
             <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[400ms]">
               <h3>{props.height}</h3>
@@ -68,7 +68,7 @@ export default function CardRocketsRight(props: infoRocket) {
               <p className="ml-auto">{props.cargaGtoData}</p>
             </div>
           </div>
-          <div className="w-3/4">
+          <div className="w-3/4 max-[744px]:w-4/5 max-[744px]:text-center">
             <p className="text-white">{props.description}</p>
           </div>
         </div>
