@@ -61,10 +61,7 @@ export default function SpaceOrbit() {
         <div className="mt-12">
           <div className="mx-auto w-2/4 animate-fade-up text-center">
             <p className="rounded px-4 py-2 text-lg shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]">
-              Na transmissão ao vivo abaixo, Pedro proporciona uma análise
-              detalhada e reflexiva, logo após a conclusão do teste de voo da
-              impressionante nave espacial Starship e sua colossal fase inicial,
-              SuperHeavy.
+              Análise logo após a conclusão do teste de voo da Starship
             </p>
           </div>
           <div className="mx-auto animate-fade-up py-4 animate-delay-300">

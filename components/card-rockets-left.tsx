@@ -19,7 +19,7 @@ type infoRocket = {
 
 export default function CardRocketsLeft(props: infoRocket) {
   return (
-    <div className="mr-12 flex flex-col items-end rounded-r-xl bg-black py-8 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] max-[744px]:mr-0 max-[744px]:rounded-xl max-[744px]:shadow-none">
+    <div className="mr-12 flex flex-col items-end rounded-r-xl bg-black py-8 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] max-[744px]:mr-0 max-[744px]:rounded-xl max-[744px]:shadow-none max-[455px]:rounded-none">
       <div className="mx-auto flex items-center max-[744px]:flex-col-reverse">
         <div className="mr-16 max-[744px]:mr-0">
           <div className="mb-8 ml-auto mt-4 flex w-[330px] flex-col space-y-8 font-semibold text-white max-[744px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
