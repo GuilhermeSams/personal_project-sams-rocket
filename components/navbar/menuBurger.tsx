@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { Menu } from 'lucide-react'
 
 // import { Button } from '@/components/ui/button'
@@ -15,10 +16,7 @@ import {
 
 export default function DropdownMenuDemo() {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false)
-
-  const handleLinkClick = () => {
-    setIsDropdownVisible(false)
-  }
+  const router = useRouter()
 
   const toggleDropdown = () => {
     setIsDropdownVisible((prev) => !prev)
@@ -39,7 +37,7 @@ export default function DropdownMenuDemo() {
           <DropdownMenuGroup>
             <DropdownMenuItem>
               <Link
-                onClick={handleLinkClick}
+                onClick={() => router.push('app/foguetes/starship')}
                 className="mr-2"
                 href={'/foguetes/starship'}
               >
@@ -48,7 +46,7 @@ export default function DropdownMenuDemo() {
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Link
-                onClick={handleLinkClick}
+                onClick={() => router.push('app/foguetes/falcon9')}
                 className="mr-2"
                 href={'/foguetes/falcon9'}
               >
@@ -57,7 +55,7 @@ export default function DropdownMenuDemo() {
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Link
-                onClick={handleLinkClick}
+                onClick={() => router.push('app/foguetes/spaceshuttle')}
                 className="mr-2"
                 href={'/foguetes/spaceshuttle'}
               >
@@ -66,7 +64,7 @@ export default function DropdownMenuDemo() {
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Link
-                onClick={handleLinkClick}
+                onClick={() => router.push('app/foguetes/ariane5')}
                 className="mr-2"
                 href={'/foguetes/ariane5'}
               >
@@ -80,7 +78,7 @@ export default function DropdownMenuDemo() {
             <DropdownMenuSeparator />
             <DropdownMenuItem>
               <Link
-                onClick={handleLinkClick}
+                onClick={() => router.push('app/transmissoes/space-orbit')}
                 className="mr-2"
                 href={'/transmissoes/space-orbit'}
               >
@@ -88,22 +86,38 @@ export default function DropdownMenuDemo() {
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={() => router.push('app/transmissoes/space-orbit')}
+                className="mr-2"
+                href={'#'}
+              >
                 Space Today
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={() => router.push('app/transmissoes/space-orbit')}
+                className="mr-2"
+                href={'#'}
+              >
                 Dobra Espacial
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={() => router.push('app/transmissoes/space-orbit')}
+                className="mr-2"
+                href={'#'}
+              >
                 Café e Ciência
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={() => router.push('app/transmissoes/space-orbit')}
+                className="mr-2"
+                href={'#'}
+              >
                 Ned Oliveira
               </Link>
             </DropdownMenuItem>
@@ -114,7 +128,7 @@ export default function DropdownMenuDemo() {
             <DropdownMenuSeparator />
             <DropdownMenuItem>
               <Link
-                onClick={handleLinkClick}
+                onClick={() => router.push('app/empresas/spacex')}
                 className="mr-2"
                 href={'/empresas/spacex'}
               >
@@ -122,27 +136,47 @@ export default function DropdownMenuDemo() {
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={() => router.push('app/foguetes/starship')}
+                className="mr-2"
+                href={'#'}
+              >
                 Nasa
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={() => router.push('app/foguetes/starship')}
+                className="mr-2"
+                href={'#'}
+              >
                 AEB
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={() => router.push('app/foguetes/starship')}
+                className="mr-2"
+                href={'#'}
+              >
                 Rocket Lab
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={() => router.push('app/foguetes/starship')}
+                className="mr-2"
+                href={'#'}
+              >
                 Ariane Space
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link onClick={handleLinkClick} className="mr-2" href={'#'}>
+              <Link
+                onClick={() => router.push('app/foguetes/starship')}
+                className="mr-2"
+                href={'#'}
+              >
                 ULA
               </Link>
             </DropdownMenuItem>
