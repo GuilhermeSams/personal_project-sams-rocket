@@ -69,15 +69,15 @@ export default function SpaceShuttlePage() {
                       <h2>Peso Vazio</h2>
                       <p className="ml-auto">144,200 kg</p>
                     </div>
-                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-300">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[400ms]">
                       <h2>Peso Máx de Decol.</h2>
                       <p className="ml-auto">322,000 kg</p>
                     </div>
-                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-300">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[500ms]">
                       <h2>Motores</h2>
                       <p className="ml-auto">4</p>
                     </div>
-                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-300">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[600ms]">
                       <h2>Empuxo por Motor</h2>
                       <p className="ml-auto">222 kN</p>
                     </div>
@@ -104,7 +104,7 @@ export default function SpaceShuttlePage() {
                         <h3>Expuxo</h3>
                         <p className="ml-auto">1.200.000 N</p>
                       </div>
-                      <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[500ms]">
+                      <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[700ms]">
                         <h3>Ciclo do Motor</h3>
                         <p className="ml-auto">Fechado</p>
                       </div>
@@ -120,7 +120,7 @@ export default function SpaceShuttlePage() {
                     inclinação da órbita ou realizar manobras de reentrada.
                   </p>
                   <div className="mb-8 mt-4 flex w-[330px] flex-col	space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
-                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[400ms]">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[800ms]">
                       <h3>Expuxo</h3>
                       <p className="ml-auto">26.700 N</p>
                     </div>
@@ -164,6 +164,13 @@ export default function SpaceShuttlePage() {
                       <p className="ml-auto">7,590 tf</p>
                     </div>
                   </div>
+                  <p className="my-4 opacity-90">
+                    O tanque externo que é conhecido por tanque laranja continha
+                    os dois tipos de combustível necessários para os motores
+                    principais RS-25: hidrogênio líquido (LH2) e oxigênio
+                    líquido (LOX). Ele fornecia o combustível e o oxidante para
+                    os motores principais durante a fase de lançamento.
+                  </p>
                 </div>
               </ScrollArea>
             </div>

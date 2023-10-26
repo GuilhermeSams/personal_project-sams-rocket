@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import img_falcon9_sidebar from 'public/img_falcon9_sidebar.jpg'
+import img_ariane5_sidebar from 'public/img_ariane5_sidebar.jpg'
 import img_startship_mobile from 'public/img_starship_por__do_sol.jpg'
 
 import { ScrollArea } from '@/components/ui/scroll-area'
@@ -21,8 +21,8 @@ export default function Starship() {
           >
             <Image
               className="h-full w-full bg-black"
-              src={img_falcon9_sidebar}
-              alt="Falcon 9 da SpaceX"
+              src={img_ariane5_sidebar}
+              alt="Ariane 5 da ESA"
               height={1080}
               style={{
                 objectFit: 'cover',
@@ -34,22 +34,24 @@ export default function Starship() {
             <div className="max-[1000px]:max-w-full">
               <ScrollArea className="h-[93vh] rounded-md max-[1000px]:h-full">
                 <div className="m-4 mb-8">
-                  <h1 className="text-6xl opacity-100">Falcon 9</h1>
+                  <h1 className="text-6xl opacity-100">Ariane 5</h1>
                   <p className="opacity-70">
-                    O Foguete mais reutilizável do mundo.
+                    SUA CAPACIDADE DE LANÇAR CARGAS ÚTEIS EM ÓRBITAS
+                    GEOSSÍNCRONAS ALTAMENTE ELEVADAS É INCRÍVEL.
                   </p>
                 </div>
                 <div className="m-4">
                   <h2 className="mb-2 text-xl">VISÃO GERAL DO FOGUETE</h2>
                   <p className="opacity-90">
-                    O Falcon 9 é um foguete reutilizável de dois estágios
-                    projetado e fabricado pela SpaceX para o transporte
-                    confiável e seguro de pessoas e cargas úteis para a órbita
-                    da Terra e além. O Falcon 9 é o primeiro foguete
-                    reutilizável de classe orbital do mundo. A capacidade de
-                    reutilização permite que a SpaceX lance as partes mais caras
-                    do foguete, o que, por sua vez, reduz o custo de acesso ao
-                    espaço.
+                    O Ariane 5 foi o principal sistema de lançamento da Europa
+                    durante mais de um quarto de século, voando 117 vezes entre
+                    1996 e 2023 a partir do porto espacial europeu na Guiana
+                    Francesa. Cargas úteis notáveis incluem a missão Rosetta de
+                    caça a cometas da ESA , uma dúzia de satélites de navegação
+                    Galileo da Europa – orbitados por apenas três lançamentos –
+                    e o Telescópio Espacial James Webb . A última missão da ESA
+                    do Ariane 5 enviou Juice a caminho de explorar Júpiter e
+                    suas luas geladas.
                   </p>
                   <div className="min-[900px]:hidden">
                     <Image
@@ -63,75 +65,81 @@ export default function Starship() {
                   <div className="mb-8 mt-4 flex w-[330px] flex-col space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
                     <div className="flex animate-fade-up border-b border-gray-600 animate-delay-100">
                       <h3>Altura</h3>
-                      <p className="ml-auto">70 m</p>
+                      <p className="ml-auto">52.5 m</p>
                     </div>
                     <div className="flex animate-fade-up border-b border-gray-600 animate-delay-200">
                       <h3>Diâmetro</h3>
-                      <p className="ml-auto">3.7 m</p>
-                    </div>
-                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-200">
-                      <h3>Massa</h3>
-                      <p className="ml-auto">549,054 kg</p>
+                      <p className="ml-auto">5.4 m</p>
                     </div>
                     <div className="flex animate-fade-up border-b border-gray-600 animate-delay-300">
-                      <h2>Capacidade de Carga</h2>
-                      <p className="ml-auto">22,800 kg</p>
+                      <h2>Peso no Lançamento</h2>
+                      <p className="ml-auto">780 t</p>
                     </div>
-                  </div>
-                </div>
-                <div className="m-4">
-                  <h2 className="mb-2 text-4xl">Falcon 9 1° ESTÁGIO</h2>
-                  <p className="opacity-90">
-                    O primeiro estágio do Falcon 9 incorpora nove motores Merlin
-                    e tanques de liga de alumínio-lítio contendo oxigênio
-                    líquido e propulsor de querosene para foguete (RP-1). O
-                    Falcon 9 gera mais de 1,7 milhão de libras de empuxo ao
-                    nível do mar.
-                  </p>
-                  <div className="mb-8 mt-4 flex w-[330px] flex-col	space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
                     <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[400ms]">
-                      <h3>Altura</h3>
-                      <p className="ml-auto">50 m</p>
+                      <h2>Estágios</h2>
+                      <p className="ml-auto">3</p>
                     </div>
                     <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[500ms]">
-                      <h3>Diâmetro</h3>
-                      <p className="ml-auto">9 m</p>
-                    </div>
-                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[600ms]">
-                      <h2>Capacidade de Combustível</h2>
-                      <p className="ml-auto">1,200 t</p>
-                    </div>
-                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[700ms]">
-                      <h3>Força de Impulso</h3>
-                      <p className="ml-auto">1,500 tf</p>
-                    </div>
-                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[800ms]">
-                      <h2>Capacidade de Carga</h2>
-                      <p className="ml-auto">100 - 150 t</p>
+                      <h2>Carga Max</h2>
+                      <p className="ml-auto">11 t</p>
                     </div>
                   </div>
                 </div>
                 <div className="m-4">
-                  <h2 className="mb-2 text-4xl opacity-100">2° ESTÁGIO</h2>
+                  <h2 className="mb-2 text-4xl"> Boosters Laterais</h2>
                   <p className="opacity-90">
-                    O segundo estágio, movido por um único motor a vácuo Merlin,
-                    entrega a carga útil do Falcon 9 à órbita desejada. O motor
-                    do segundo estágio é acionado alguns segundos após a
-                    separação do estágio e pode ser reiniciado várias vezes para
-                    colocar várias cargas em órbitas diferentes.
+                    Os boosters laterais do foguete Ariane 5 são conhecidos como
+                    Ariane Solid Rocket Boosters (Ariane SRBs) ou EAP (Étage
+                    dAccélération à Poudre), que em francês significa Estágio de
+                    Aceleração a Pólvora. Aqui estão algumas informações sobre
+                    esses boosters laterais:
+                  </p>
+                  <div className="mb-8 mt-4 flex w-[330px] flex-col	space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[600ms]">
+                      <h3>Capacidade de Propelente</h3>
+                      <p className="ml-auto">240 t cada</p>
+                    </div>
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[700ms]">
+                      <h3>Empuxo</h3>
+                      <p className="ml-auto">7 050 kN</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="m-4">
+                  <h2 className="mb-2 text-4xl opacity-100">
+                    Motor ou Estágio Principal
+                  </h2>
+                  <p className="opacity-90">
+                    São responsáveis por fornecer o impulso necessário para
+                    levar cargas úteis em órbita. O motor principal do Ariane 5
+                    é conhecido como Vulcain.
                   </p>
                   <div className="mb-8 mt-4 flex w-[330px] flex-col space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
-                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[900ms]">
-                      <h3>Número de motores</h3>
-                      <p className="ml-auto">1 vácuo</p>
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[800ms]">
+                      <h3>Capacidade de Propelente</h3>
+                      <p className="ml-auto">175 t</p>
                     </div>
+                    <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[900ms]">
+                      <h3>Empuxo</h3>
+                      <p className="ml-auto">960 kN</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="m-4">
+                  <h2 className="mb-2 text-4xl opacity-100">UPPER STAGE </h2>
+                  <p className="opacity-90">
+                    O estágio superior (upper stage) do foguete Ariane 5 é
+                    responsável por levar as cargas úteis à órbita final
+                    desejada após a separação do estágio principal.
+                  </p>
+                  <div className="mb-8 mt-4 flex w-[330px] flex-col space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
                     <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[1000ms]">
-                      <h3>Tempo de Queima</h3>
-                      <p className="ml-auto">397 segundos</p>
+                      <h3>Capacidade de Propelente</h3>
+                      <p className="ml-auto">14,7 t</p>
                     </div>
                     <div className="flex animate-fade-up border-b border-gray-600 animate-delay-[1100ms]">
-                      <h2>Impulso</h2>
-                      <p className="ml-auto">981 kN /220.500 lbf</p>
+                      <h3>Empuxo</h3>
+                      <p className="ml-auto">67 kN</p>
                     </div>
                   </div>
                 </div>
