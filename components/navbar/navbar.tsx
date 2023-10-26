@@ -128,13 +128,15 @@ export default function Navbar() {
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                       {dataCompany.map((component) => (
-                        <ListItem
-                          key={component.title}
-                          title={component.title}
-                          href={component.href}
-                        >
-                          {component.description}
-                        </ListItem>
+                        <Link href={component.href}>
+                          <ListItem
+                            key={component.title}
+                            title={component.title}
+                            href={component.href}
+                          >
+                            {component.description}
+                          </ListItem>
+                        </Link>
                       ))}
                     </ul>
                   </NavigationMenuContent>

@@ -24,7 +24,7 @@ export default function navbarDataCompany(): Company[] {
     {
       id: 3,
       title: 'AEB',
-      href: '#',
+      href: '/empresas/aeb',
       description:
         'AEB: Agência Espacial Brasileira, impulsionando o Brasil rumo ao espaço.',
     },
