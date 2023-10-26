@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import img_spaceshuttle_sidebar from 'public/img_spaceshuttle_sidebar.jpg'
-import img_startship_mobile from 'public/img_starship_por__do_sol.jpg'
 
 import { ScrollArea } from '@/components/ui/scroll-area'
 
@@ -50,10 +49,10 @@ export default function SpaceShuttlePage() {
                   <div className="min-[900px]:hidden">
                     <Image
                       className="my-4 rounded-3xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
-                      src={img_startship_mobile}
+                      src={img_spaceshuttle_sidebar}
                       width={500}
                       height={500}
-                      alt="Imagem da Startship"
+                      alt="Imagem do Space Shuttle"
                     />
                   </div>
                   <div className="mb-8 mt-4 flex w-[330px] flex-col space-y-4 font-semibold max-[465px]:mx-auto max-[280px]:w-[260px] max-[280px]:text-sm">
