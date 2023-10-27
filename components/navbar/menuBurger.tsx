@@ -80,43 +80,43 @@ export default function DropdownMenuDemo() {
               <Link
                 onClick={() => router.push('app/transmissoes/space-orbit')}
                 className="mr-2"
-                href={'/transmissoes/space-orbit'}
+                href={'/transmissoes/spaceorbit'}
               >
                 Space Orbit
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Link
-                onClick={() => router.push('app/transmissoes/space-orbit')}
+                onClick={() => router.push('app/transmissoes/spacetoday')}
                 className="mr-2"
-                href={'#'}
+                href={'/transmissoes/spacetoday'}
               >
                 Space Today
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Link
-                onClick={() => router.push('app/transmissoes/space-orbit')}
+                onClick={() => router.push('app/transmissoes/dobraespacial')}
                 className="mr-2"
-                href={'#'}
+                href={'/transmissoes/dobraespacial'}
               >
                 Dobra Espacial
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Link
-                onClick={() => router.push('app/transmissoes/space-orbit')}
+                onClick={() => router.push('app/transmissoes/cafeeciencia')}
                 className="mr-2"
-                href={'#'}
+                href={'/transmissoes/cafeeciencia'}
               >
                 Café e Ciência
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Link
-                onClick={() => router.push('app/transmissoes/space-orbit')}
+                onClick={() => router.push('app/transmissoes/nedoliveira')}
                 className="mr-2"
-                href={'#'}
+                href={'/transmissoes/nedoliveira'}
               >
                 Ned Oliveira
               </Link>
