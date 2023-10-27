@@ -50,7 +50,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <div className="">
+    <div>
       <div id="navbar" className="fixed top-0 z-[1] w-full transition-all">
         <div className={sharetechmono.className}>
           <nav className="relative flex h-14 w-full items-center justify-center bg-background">

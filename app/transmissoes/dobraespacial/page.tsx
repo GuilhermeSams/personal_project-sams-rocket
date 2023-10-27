@@ -13,11 +13,11 @@ export default function SpaceOrbit() {
           'Criador do Dobra Espacial e fascinado por foguetes e exploração espacial'
         }
         description={
-          'Dono do Canal Space Today e do Podcast Ciência Sem Fim, o maior icone da divulgação científica do Brasil.'
+          'Seus documentários de história sobre as missões Apollo e dos programas Space Shuttle são incríveis'
         }
-        hrefYoutube={'https://www.youtube.com/@SpaceToday'}
-        hrefX={'https://twitter.com/SpaceToday1'}
-        hrefStore={'https://www.spacetodaystore.com/'}
+        hrefYoutube={'https://www.youtube.com/@DobraEspacial'}
+        hrefX={'https://twitter.com/tomatosmat'}
+        hrefStore={'#'}
         descriptionVideo={'Acidente do Ônibus Espacial Columbia'}
         srcVideo={
           'https://www.youtube.com/embed/-hWwkHFU0aI?si=zEDhanTOU9zhkxCg'
