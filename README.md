@@ -3,7 +3,7 @@
 
 ## Tecnologias
 
-- Next.js v18
+- Next.js v13
 - TypeScript 4.9.5
 - Radix UI Primitives
 - Shadcn-ui
